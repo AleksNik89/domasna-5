@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поп Фестивал</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #eaf4ff;
+        color: #17365d;
+    }
+
+    header {
+        background-color: #2563a6;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        border-bottom: 4px solid #60a5fa;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    main {
+        width: 85%;
+        margin: auto;
+        padding: 15px;
+    }
+
+    h2 {
+        color: #2563a6;
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .zanrovi {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    .zanr {
+        background-color: #bfdbfe;
+        color: #17365d;
+        padding: 10px 18px;
+        border-radius: 30px;
+        font-size: 13px;
+    }
+
+    .programa {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 56px);
+        grid-auto-flow: column;
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    .nastap {
+        background-color: #60a5fa;
+        color: white;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .bilети {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-flow: row dense;
+        gap: 8px;
+    }
+
+    .bilet {
+        background-color: white;
+        border: 1px solid #60a5fa;
+        border-radius: 5px;
+        min-height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 13px;
+        color: #17365d;
+        padding: 5px;
+    }
+
+    .golem {
+        grid-column: span 2;
+        background-color: #facc15;
+        color: #17365d;
+        font-weight: bold;
+        border: 1px solid #eab308;
+    }
+
+    footer {
+        background-color: #2563a6;
+        color: white;
+        text-align: center;
+        padding: 12px;
+        margin-top: 25px;
+    }
+
+    @media (max-width: 650px) {
+        main {
+            width: 92%;
+            padding: 10px;
+        }
+
+        .programa {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 56px);
+        }
+
+        .bilети {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Поп Фестивал : Програма</h1>
+</header>
+
+<main>
+
+    <section>
+        <h2>Жанрови</h2>
+
+        <div class="zanrovi">
+            <div class="zanr">#поп</div>
+            <div class="zanr">#денс</div>
+            <div class="zanr">#електро-поп</div>
+            <div class="zanr">#инди-поп</div>
+            <div class="zanr">#ретро</div>
+            <div class="zanr">#синт-поп</div>
+            <div class="zanr">#џез</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Програма (3 дена)</h2>
+
+        <div class="programa">
+            <div class="nastap">1 Ден 1 : Попладне</div>
+            <div class="nastap">2 Ден 1 : Вечер</div>
+            <div class="nastap">3 Ден 1 : Ноќ</div>
+
+            <div class="nastap">4 Ден 2 : Попладне</div>
+            <div class="nastap">5 Ден 2 : Вечер</div>
+            <div class="nastap">6 Ден 2 : Ноќ</div>
+
+            <div class="nastap">7 Ден 3 : Попладне</div>
+            <div class="nastap">8 Ден 3 : Вечер</div>
+            <div class="nastap">9 Ден 3 : Ноќ</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Билети</h2>
+
+        <div class="bilети">
+
+            <div class="bilet">Ден 1</div>
+
+            <div class="bilet golem">
+                VIP пакет + Moet 4.500 ден.
+            </div>
+
+            <div class="bilet">Ден 2</div>
+
+            <div class="bilet">Ден 3</div>
+
+            <div class="bilet golem">
+                Викенд билет – 2.000 ден.
+            </div>
+
+            <div class="bilet">Камп</div>
+
+            <div class="bilet golem">
+                Семеен билет (4 лица)
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 Поп Фестивал
+</footer>
+
+</body>
+</html>

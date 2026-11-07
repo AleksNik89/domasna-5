@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Festival</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #282525;
+        color: #fff;
+    }
+
+    header {
+        background-color: #020202;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #ff0000;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        color: #ff0000;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    button {
+        background-color: #ff0000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    main {
+        width: 85%;
+        margin: auto;
+        padding: 10px 0;
+    }
+
+    h2 {
+        color: #ff0000;
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    .band {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 20px;
+        padding: 20px;
+        background-color: #66696c;
+        border-radius: 10px;
+        gap: 20px;
+    }
+
+    .karticka {
+        border: 2px solid #ff0000;
+        border-radius: 10px;
+        background-color: #282525;
+        padding: 20px;
+        width: 300px;
+    }
+
+    .band .karticka {
+        background-color: #ff0000;
+        border: none;
+        border-radius: 8px;
+        width: 180px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .band-info {
+        margin-left: 0;
+        color: #fff;
+        flex: 1;
+    }
+
+    .band-info h3 {
+        margin-top: 0;
+        color: #fff;
+    }
+
+    .band-info p {
+        font-size: 14px;
+    }
+
+    .izveduvaci {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 15px;
+        margin: 0 20px;
+    }
+
+    .izveduvaci .karticka {
+        flex: 1;
+        margin: 0;
+        padding: 15px;
+        min-height: 110px;
+        background-color: #282525;
+    }
+
+    .izveduvaci h3 {
+        color: #fff;
+        margin-top: 0;
+        font-size: 17px;
+    }
+
+    .izveduvaci p {
+        font-size: 12px;
+        color: #ccc;
+    }
+
+    .cena {
+        color: #ff0000;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .valuta {
+        color: #aaa;
+        font-size: 11px;
+    }
+
+    footer {
+        background-color: #020202;
+        border-top: 2px solid #ff0000;
+        text-align: center;
+        padding: 15px;
+        margin-top: 40px;
+        color: #aaa;
+        font-size: 12px;
+    }
+
+    @media (max-width: 700px) {
+        header {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .band {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .izveduvaci {
+            flex-direction: column;
+        }
+
+        .izveduvaci .karticka {
+            width: auto;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header">
+        <h1>Рок Фестивал🤘</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#programa">Програма</a></li>
+            <li><a href="#izveduvaci">Изведувачи</a></li>
+            <li><a href="#lokacija">Локација</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <button>Купи билет</button>
+    </div>
+</header>
+
+<main>
+
+    <section id="programa">
+        <h2>Главна ѕвезда</h2>
+
+        <div class="band">
+            <div class="karticka">
+                <p>Слика</p>
+            </div>
+
+            <div class="band-info">
+                <h3>Црни Громови</h3>
+                <p>
+                    Црни Громови се еден од најпознатите рок бендови во Македонија.
+                    Со својата енергична музика и незаборавни настапи,
+                    тие се главната атракција на нашиот фестивал.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="izveduvaci">
+        <h2>Изведувачи</h2>
+
+        <div class="izveduvaci">
+
+            <div class="karticka">
+                <h3>Железен Пулс</h3>
+                <p>Метал, 22:00.</p>
+                <span class="cena">900</span>
+                <span class="valuta"> ден.</span>
+            </div>
+
+            <div class="karticka">
+                <h3>Ноќен воз</h3>
+                <p>
+                    Рок бенд од Скопје со моќни рифови
+                    и настапи што не се забораваат.
+                </p>
+                <span class="cena">1.500</span>
+                <span class="valuta"> ден.</span>
+            </div>
+
+            <div class="karticka">
+                <h3>Црвена Ана</h3>
+                <p>Блуз-рок вечер, 20:30.</p>
+                <span class="cena">1.200</span>
+                <span class="valuta"> ден.</span>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Рок Фестивал Гром - Билети на каса или на: 070 555 123</p>
+</footer>
+
+</body>
+</html>
